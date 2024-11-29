@@ -46,6 +46,7 @@ export function Pagination({
             onClick={() => onPageChange(pageIndex - 1)}
             variant="outline"
             className="h-8 w-8 p-0"
+            disabled={pageIndex === 0}
           >
             <ChevronLeft className="h-4 w-4" />
             <span className="sr-only">Página anterior</span>
